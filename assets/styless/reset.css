@@ -1,0 +1,22 @@
+/* INICIO RESETE GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body .barra--navegacao li,
+body main .rede--social li {
+    list-style: none;
+    
+}
+
+body .barra--navegacao li a,
+body main .rede--social li a,
+body main .conteiner--escopo .escopo--texto .escopo--texto--botao a{
+    text-decoration: none;
+    
+}
+main{
+    min-height: calc(100vh - 169px);
+}
+/* FIM RESETE GERAL */

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor-letra: #ffffff;
+    --cor-botao: #2B59EA;
+    --cor-botaoHover: #4177F7;
+    --fonte-bold: "Montserrat", sans-serif;
+}
+/* INICIO FUNDO SO SITE */
+body{
+    background-image: url(../images/fundo_uaiexplorer.svg) !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* FIM FUNDO SO SITE */
+
+/* INICIO CABEÇALHO */
+body header .barra--navegacao{
+    background-color: rgba(18, 18, 18, 0.8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding : 20px;
+    gap: 30%;
+}
+
+body header .barra--navegacao .barra--navegacao--logo{
+    margin-left: 100px;
+}
+
+body header .barra--navegacao .barra--navegacao--logo a{
+    cursor: pointer;
+    transition: ease-in-out;
+}
+
+body header .barra--navegacao .barra--navegacao--botao{
+    display: flex;
+    gap: 30px;
+
+}
+
+body header .barra--navegacao div li a{
+    color: var(--cor-letra);
+    font-family: var(--fonte-bold);
+    padding: 0px 5px;
+    font-size: 1.2rem;
+}
+
+body header .barra--navegacao div li a:hover{
+   text-decoration: underline;
+}
+
+body header .barra--navegacao a .logo_barra--navegacao{
+    height: 65px;
+    width: 200px;
+}
+/* FIM CABEÇALHO */
+
+/* INICIO MAIN */
+body main .conteiner--escopo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+body main .conteiner--escopo .escopo--texto{
+    color: var(--cor-letra);
+    font-family: var(--fonte-bold);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 400px;
+    align-items: center;
+    padding: 20px;
+}
+
+body main .conteiner--escopo .escopo--texto .escopo--titulo,
+body main .conteiner--escopo .escopo--texto .escopo--paragrafo,
+body main .conteiner--escopo .escopo--texto .escopo--texto--botao{
+    padding: 10px 0px;
+    text-align: justify;
+}
+
+body main .conteiner--escopo .escopo--texto .escopo--titulo{
+
+    font-size: 2rem;
+}
+body main .conteiner--escopo .escopo--texto .escopo--paragrafo{
+    font-size: 1.2rem;
+    text-indent: 30px;
+}
+
+body main .conteiner--escopo .escopo--texto .escopo--texto--botao{
+    width: 200px;
+    height: 90px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+body main .conteiner--escopo .escopo--texto .escopo--texto--botao .escopo--botao{
+    display: flex;
+    justify-content: center;
+    border-radius: 24px;
+    padding: 10px;
+    background-color: var(--cor-botao);
+    color: var(--cor-letra);
+    font-family: var(--fonte-bold);
+    
+}
+
+body main .conteiner--escopo .escopo--texto .escopo--texto--botao .escopo--botao:hover{
+    background-color: var(--cor-botaoHover);
+    transition: all 1s ease-in 0s;
+}
+
+body main .conteiner--escopo .escopo--imagem--projeto{
+    width: 1000px;
+    height: 800px;
+    padding: 20px;
+}
+/* FINAL MAIN */
+
+/* BARRA LATERAL */
+body main .barra--lateral--rede-social{
+    position: fixed;
+    right: 0px;
+    bottom: 50%;
+    z-index: 1;
+    background-color: rgba(18, 18, 18, 0.8);
+    width: 40px;
+    height: 120px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body main .barra--lateral--rede-social .rede--social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body main .barra--lateral--rede-social .rede--social li:hover{
+    transform: scale(1.05);
+}
+
+body main .barra--lateral--rede-social .rede--social li a{
+    color: var(--cor-letra);
+    font-size: 1.5rem;
+}
+body main .barra--lateral--rede-social .rede--social li a:hover{
+    transform: scale(1.1);
+}
+/* FIM BARRA LATERAL */
+
+/* INICIO RODAPE */
+body .rodape{
+    display: flex;
+    background-color: rgba(18, 18, 18, 1);
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+body .rodape span{
+    display: flex;
+    align-items: center;
+    color: var(--cor-letra);
+    font-family: var(--fonte-bold);
+    font-size: 1rem;
+    gap: 20px;
+}
+/* FIM RODAPE */
