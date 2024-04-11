@@ -6,7 +6,7 @@
     --fonte-bold: "Montserrat", sans-serif;
 }
 /* INICIO FUNDO SO SITE */
-body main{
+body{
     background-image: url(../images/fundo_uaiexplorer.svg) !important;
     background-position: center center;
     background-size: cover;
