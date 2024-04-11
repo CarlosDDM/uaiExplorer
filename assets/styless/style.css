@@ -6,7 +6,7 @@
     --fonte-bold: "Montserrat", sans-serif;
 }
 /* INICIO FUNDO SO SITE */
-body{
+body main{
     background-image: url(../images/fundo_uaiexplorer.svg) !important;
     background-position: center center;
     background-size: cover;
@@ -39,14 +39,14 @@ body header .barra--navegacao .barra--navegacao--botao{
 
 }
 
-body header .barra--navegacao div li a{
+body header .barra--navegacao ul li a{
     color: var(--cor-letra);
     font-family: var(--fonte-bold);
     padding: 0px 5px;
     font-size: 1.2rem;
 }
 
-body header .barra--navegacao div li a:hover{
+body header .barra--navegacao ul li a:hover{
    text-decoration: underline;
 }
 
@@ -137,23 +137,21 @@ body main .barra--lateral--rede-social{
     align-items: center;
 }
 
-body main .barra--lateral--rede-social .rede--social{
+body main .barra--lateral--rede-social .rede--social ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
-body main .barra--lateral--rede-social .rede--social li:hover{
+body main .barra--lateral--rede-social .rede--social ul li:hover{
     transform: scale(1.05);
 }
 
-body main .barra--lateral--rede-social .rede--social li a{
+body main .barra--lateral--rede-social .rede--social ul li a{
     color: var(--cor-letra);
     font-size: 1.5rem;
 }
-body main .barra--lateral--rede-social .rede--social li a:hover{
-    transform: scale(1.1);
-}
+
 /* FIM BARRA LATERAL */
 
 /* INICIO RODAPE */
