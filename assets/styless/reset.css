@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 body .barra--navegacao li,
 body main .rede--social li {
     list-style: none;
@@ -17,6 +20,6 @@ body main .conteiner--escopo .escopo--texto .escopo--texto--botao a{
     
 }
 main{
-    min-height: calc(100vh - 169px);
+    min-height: calc(100vh - 16.9rem);
 }
 /* FIM RESETE GERAL */

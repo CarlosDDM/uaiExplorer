@@ -4,10 +4,15 @@
     --cor-botao: #2B59EA;
     --cor-botaoHover: #4177F7;
     --fonte-bold: "Montserrat", sans-serif;
+    --fonte-principal-tamanho: 2rem;
+    --fonte-titulo-tamanho: 3rem;
+    --tamanho-icone-barra-lateral: 2.5rem;
+    --tamanho-fonte-cabecalho : 2rem;
+    --tamanho-fonte-rodape: 1.6rem;
 }
 /* INICIO FUNDO SO SITE */
 body{
-    background-image: url(../images/fundo_uaiexplorer.svg) !important;
+    background-image: url(../images/fundo_uaiexplorer.jpg) !important;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,12 +25,12 @@ body header .barra--navegacao{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding : 20px;
-    gap: 30%;
+    padding : 1.5rem;
+    gap: 25%;
 }
 
 body header .barra--navegacao .barra--navegacao--logo{
-    margin-left: 100px;
+    margin-left: 10rem;
 }
 
 body header .barra--navegacao .barra--navegacao--logo a{
@@ -35,7 +40,7 @@ body header .barra--navegacao .barra--navegacao--logo a{
 
 body header .barra--navegacao .barra--navegacao--botao{
     display: flex;
-    gap: 30px;
+    gap: var(--tamanho-fonte-cabecalho);
 
 }
 
@@ -43,7 +48,7 @@ body header .barra--navegacao ul li a{
     color: var(--cor-letra);
     font-family: var(--fonte-bold);
     padding: 0px 5px;
-    font-size: 1.2rem;
+    font-size: var(--fonte-principal-tamanho);
 }
 
 body header .barra--navegacao ul li a:hover{
@@ -51,8 +56,8 @@ body header .barra--navegacao ul li a:hover{
 }
 
 body header .barra--navegacao a .logo_barra--navegacao{
-    height: 65px;
-    width: 200px;
+    height: 6.5rem;
+    width: 20rem;
 }
 /* FIM CABEÇALHO */
 
@@ -61,7 +66,6 @@ body main .conteiner--escopo {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
 }
 
 body main .conteiner--escopo .escopo--texto{
@@ -70,8 +74,8 @@ body main .conteiner--escopo .escopo--texto{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 350px;
-    height: 400px;
+    width: 35rem;
+    height: 40rem;
     align-items: center;
     padding: 20px;
 }
@@ -85,24 +89,25 @@ body main .conteiner--escopo .escopo--texto .escopo--texto--botao{
 
 body main .conteiner--escopo .escopo--texto .escopo--titulo{
 
-    font-size: 2rem;
+    font-size: var(--fonte-titulo-tamanho);
 }
 body main .conteiner--escopo .escopo--texto .escopo--paragrafo{
-    font-size: 1.2rem;
-    text-indent: 30px;
+    font-size: var(--fonte-principal-tamanho);
+    text-indent: 3rem;
 }
 
 body main .conteiner--escopo .escopo--texto .escopo--texto--botao{
-    width: 200px;
-    height: 90px;
+    width: 20rem;
+    height: 9rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: var(--fonte-principal-tamanho);
+    
 }
 body main .conteiner--escopo .escopo--texto .escopo--texto--botao .escopo--botao{
     display: flex;
     justify-content: center;
-    border-radius: 24px;
-    padding: 10px;
+    border-radius: 2.4rem;
+    padding: 1rem;
     background-color: var(--cor-botao);
     color: var(--cor-letra);
     font-family: var(--fonte-bold);
@@ -115,23 +120,22 @@ body main .conteiner--escopo .escopo--texto .escopo--texto--botao .escopo--botao
 }
 
 body main .conteiner--escopo .escopo--imagem--projeto{
-    width: 1000px;
-    height: 800px;
-    padding: 20px;
+    width: 100rem;
+    height: 80rem;
 }
 /* FINAL MAIN */
 
 /* BARRA LATERAL */
 body main .barra--lateral--rede-social{
     position: fixed;
-    right: 0px;
-    bottom: 50%;
+    right: 0;
+    top: 40%;
     z-index: 1;
     background-color: rgba(18, 18, 18, 0.8);
-    width: 40px;
-    height: 120px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    width: 4rem;
+    height: 12rem;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +144,7 @@ body main .barra--lateral--rede-social{
 body main .barra--lateral--rede-social .rede--social ul{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.8rem;
 }
 
 body main .barra--lateral--rede-social .rede--social ul li:hover{
@@ -149,25 +153,26 @@ body main .barra--lateral--rede-social .rede--social ul li:hover{
 
 body main .barra--lateral--rede-social .rede--social ul li a{
     color: var(--cor-letra);
-    font-size: 1.5rem;
+    font-size: var(--tamanho-icone-barra-lateral);
 }
 
 /* FIM BARRA LATERAL */
 
 /* INICIO RODAPE */
 body .rodape{
+    margin-top: 1.3rem;
     display: flex;
     background-color: rgba(18, 18, 18, 1);
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 6rem;
 }
 body .rodape span{
     display: flex;
     align-items: center;
     color: var(--cor-letra);
     font-family: var(--fonte-bold);
-    font-size: 1rem;
+    font-size: 1.6rem;
     gap: 20px;
 }
 /* FIM RODAPE */
